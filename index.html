@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock price Prediction</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class='header'>
+            Stock price Prediction
+        </div>
+        <div class="pass">
+            <div class="left">
+                <div class="stockhead">   <span id="compname">Google</span> Stock Chart </div>
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </div>
+            <div class="line"></div>
+            <div class="right">
+                <div class="dropdown-container">
+                    <select id="companyDropdown"  aria-labelledby="companyDropdown" class="neomorph-dropdown">
+                        <option value="google">Google</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="meta">Meta</option>
+                        <option value="adobe">Adobe</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="netflix">Netflix</option>
+                    </select>
+                </div>
+                <div class="predict-master">
+                    
+                    <div class="slider-container">
+                        <h2 style="text-align: center;">Price Prediction</h2>
+                        <input type="range" min="0" max="20" value="10" class="slider" id="neomorphicSlider" title="Slider to select a value between 0 and 20">
+                        <div class="value-display" id="sliderValue">2016-02-09</div>
+                        <button class="gradient-button"  onclick="giveAns()" >Predict</button>
+                    </div>
+                    <div id="ansbox">
+                            0
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>

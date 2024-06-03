@@ -1,0 +1,219 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #e7ebef;
+  padding-top: 20px;
+}
+
+.header {
+  outline: 0;
+  border: 0;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  height: 60px;
+  font-size: 40px;
+  top: 20px;
+  color: slategray;
+  background-color: #e7ebef;
+  font-weight: bold;
+  border-radius: 0.8em;
+  text-align: center;
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.8),
+    10px 10px 30px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 0;
+}
+.header:hover {
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.pass{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    height: 75vh;
+}
+.left {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+.right{
+    width: 30%;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.line{
+    height: 95%;
+    margin: auto;
+    width: 2px;
+    background-color: rgb(2, 17, 30);
+    border: 1px solid black;
+}
+
+.dropdown-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100px;
+}
+
+.neomorph-dropdown {
+    appearance: none;
+    color: cornflowerblue;
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+.neomorph-dropdown:hover {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.neomorph-dropdown:focus {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+/* Add a custom arrow for the dropdown */
+.neomorph-dropdown::-ms-expand {
+    display: none;
+}
+
+.dropdown-container::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: #888;
+    margin: 5px;
+}
+
+.stockhead{
+  width: 100%;
+  text-align: center ;
+  font-size: 25px;
+  font-weight: 600;
+  color: cadetblue;
+}
+
+.slider-container {
+  width: 100%;
+  padding: 20px;
+  background: #ecf0f3;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px #babecc, -7px -7px 15px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  background: #ecf0f3;
+  border-radius: 10px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  box-shadow: inset 7px 7px 15px #babecc, inset -7px -7px 15px #ffffff;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ecf0f3;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2), 3px 3px 5px #babecc, -3px -3px 5px #ffffff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ecf0f3;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2), 3px 3px 5px #babecc, -3px -3px 5px #ffffff;
+  cursor: pointer;
+}
+
+.value-display {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+
+.predict-master{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-button {
+  background-color: #4CAF50; /* fallback color if gradients are not supported */
+  background-image: linear-gradient(to bottom, #4CAF50, #2E8B57); /* gradient */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.gradient-button:hover {
+  background-color: #45a049; /* change color on hover */
+}
+
+#ansbox{
+  width: 90%;
+  height: 50px;
+  border-radius: 20px;
+  color: rgb(255, 62, 62);
+  font-size: 40px;
+  background-color: black;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 10px;
+  overflow-x: hidden;
+}
